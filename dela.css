@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 1ch groove;
+}
+
+a {
+  display: inline-flex;
+}
+
+a + a {
+  text-decoration-style: dashed;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: max(5ex, 3vmax + 2vmin);
+  line-height: 1.618;
+}
+
+body {
+  margin: auto;
+  overflow-wrap: anywhere;
+  padding: 1ch;
+}
+
+article {
+  contain: layout;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+b {
+  writing-mode: vertical-rl;
+  font-family: cursive;
+}
+
+del {
+  font-family: fantasy;
+  text-decoration-style: double;
+}
+
+ins {
+  font-family: cursive;
+  text-decoration: double overline;
+}
+
+nav {
+  contain: layout;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+nav a {
+  flex-basis: 25%;
+  padding: 5vmin;
+}
+
+h1 {
+  line-height: 1;
+  margin: 5vh;
+}
+
+@media (orientation: portrait) {
+  nav {
+    writing-mode: sideways-rl;
+  }
+}
+
+.bass {
+  margin-inline-start: auto;
+}
